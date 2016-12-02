@@ -1,5 +1,7 @@
 {
   "name": "modify-and-merge-files",
+  "version": "1.0.0",
+  "private": true,
   "keywords": [
     "ember-addon"
   ],
