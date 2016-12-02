@@ -1,0 +1,13 @@
+{
+  "name": "modify-and-merge-files",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "broccoli-funnel": "^1.0.9",
+    "broccoli-merge-trees": "^1.1.4",
+    "broccoli-plugin": "^1.2.2",
+    "mkdirp": "^0.5.1",
+    "recursive-readdir-sync": "1.0.6"
+  }
+}
