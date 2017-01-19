@@ -54,12 +54,12 @@ ModifyAndMergeFiles.prototype.build = function() {
 
     return {
       data: FS.readFileSync(fileName),
-      extension: fileExtension,
+      extension: extension,
       name: Path.basename(fileName, extension)
     };
   });
 
-  // Convert files
+  // Convert files.
   var outputFile = this.options.modify(files);
 
   // Create the folder structure of it does not exist.
