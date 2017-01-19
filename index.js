@@ -50,7 +50,13 @@ ModifyAndMergeFiles.prototype.build = function() {
   // Get a list of all filtered files.
   var fileList = recursiveReadSync(inputPath);
   var files = fileList.map(function(fileName) {
-    return FS.readFileSync(fileName);
+    var extension = Path.extname(fileName);
+
+    return {
+      data: FS.readFileSync(fileName),
+      extension: fileExtension,
+      name: Path.basename(fileName, extension)
+    };
   });
 
   // Convert files
